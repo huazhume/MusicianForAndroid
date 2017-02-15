@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <!-- navigation -->
+
+    <RelativeLayout
+        android:id="@+id/homeNavigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#000000" >
+
+        <TextView
+            android:id="@+id/nav_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="分类浏览"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/homeNav_searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/homeNavigationBar"
+        android:background="#282828" >
+
+        <ImageView
+            android:id="@+id/nav_imageBg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/viewradios_shape"
+            android:gravity="center"
+            android:textSize="14sp" >
+        </ImageView>
+
+        <EditText
+            android:id="@+id/searchText"
+            style="?android:attr/textViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="7dp"
+            android:background="@null"
+            android:hint="音乐人、DJ、流派、风格" />
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="21dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/searchbar_s" />
+    </RelativeLayout>
+    <!-- expandableListView -->
+
+    <ExpandableListView
+        android:id="@+id/tab_sec_expandaLV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/homeNav_searchBar" >
+    </ExpandableListView>
+
+
+</RelativeLayout>

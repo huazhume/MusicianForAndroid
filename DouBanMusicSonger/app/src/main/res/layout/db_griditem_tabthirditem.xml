@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:gravity="center">
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@mipmap/ic_usercenter_music"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="我的喜欢"
+        android:gravity="center"
+        />
+
+</LinearLayout>

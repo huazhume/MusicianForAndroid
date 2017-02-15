@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+
+    <TextView android:id="@+id/child_tv"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="  内地巅峰榜"
+        android:background="#FFFFFF"
+        android:textSize="14sp"
+        android:gravity="center_vertical"/>
+    <ImageView android:id="@+id/child_image"
+        android:layout_width="11dp"
+        android:layout_height="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="6dp"
+        android:src="@mipmap/search_forward2"
+        />
+</RelativeLayout>

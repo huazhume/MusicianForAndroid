@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- playingView -->
+
+    <RelativeLayout
+        android:id="@+id/rl_PlayingView"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="#181818" >
+
+        <ImageView
+            android:id="@+id/playView_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="4dp" />
+
+        <Button
+            android:id="@+id/playView_sharebtn"
+            android:layout_width="19dp"
+            android:layout_height="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="18dp"
+            android:background="@mipmap/play_share" />
+
+        <Button
+            android:id="@+id/playView_nextbtn"
+            android:layout_width="19dp"
+            android:layout_height="13dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="18dp"
+            android:layout_toLeftOf="@+id/playView_sharebtn"
+            android:background="@mipmap/play_next" />
+
+        <Button
+            android:id="@+id/playView_playingbtn"
+            android:layout_width="12dp"
+            android:layout_height="13dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="18dp"
+            android:layout_toLeftOf="@+id/playView_nextbtn"
+            android:background="@mipmap/play_playing" />
+
+        <TextView
+            android:id="@+id/playView_songnametile"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/playView_playingbtn"
+            android:layout_toRightOf="@+id/playView_icon"
+            android:text="木有播放任何歌曲呦"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scrollHorizontally="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/playView_songinfo"
+            android:layout_width="50dp"
+            android:layout_height="16dp"
+            android:layout_alignLeft="@+id/playView_songnametile"
+            android:layout_below="@+id/playView_songnametile"
+            android:text="—_—"
+            android:textColor="#CCCCCC"
+            android:textSize="9sp" />
+        <TextView
+            android:id="@+id/playView_songdurtion"
+            android:layout_width="30dp"
+            android:layout_height="16dp"
+            android:layout_alignTop="@+id/playView_songinfo"
+            android:layout_toRightOf="@+id/playView_songinfo"
+            android:text="—_—"
+            android:textColor="#CCCCCC"
+            android:textSize="9sp" />
+        <TextView
+            android:id="@+id/playView_playdurtion"
+            android:layout_width="30dp"
+            android:layout_height="16dp"
+            android:layout_alignTop="@+id/playView_songinfo"
+            android:layout_toRightOf="@+id/playView_songdurtion"
+            android:text="—_—"
+            android:textColor="#CCCCCC"
+            android:textSize="9sp" />
+    </RelativeLayout>
+
+
+    <!-- tabbar -->
+
+    <RelativeLayout
+        android:id="@+id/rl_tabbar"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="#000000" >
+
+        <Button
+            android:id="@+id/fourthBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@mipmap/tab_playing"
+            android:paddingTop="26dp"
+            android:text="正在播放"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+
+        <View
+            android:id="@+id/sepView"
+            android:layout_width="0.5dp"
+            android:layout_height="34dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/fourthBtn"
+            android:background="#5A5A5A" />
+
+        <Button
+            android:id="@+id/thirdBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/sepView"
+            android:background="@mipmap/tab_like"
+            android:paddingTop="26dp"
+            android:text="我喜欢的"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/secondBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/thirdBtn"
+            android:background="@mipmap/tab_search"
+            android:paddingTop="26dp"
+            android:text="分类浏览"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/firstBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/secondBtn"
+            android:background="@mipmap/tab_toplist"
+            android:paddingTop="26dp"
+            android:text="热门排行"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <!-- content -->
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_tabbar"
+        android:layout_alignParentTop="true" >
+    </RelativeLayout>
+
+
+</RelativeLayout>

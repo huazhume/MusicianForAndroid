@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity ="center_vertical"
+    android:background="#FFFFFF">
+    <ImageView android:id="@+id/home_iconImage"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher2"/>
+    <Button
+        android:id="@+id/home_musicIconBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#000000"
+        android:alpha="0.5"
+        android:text="01"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp" />
+    <Button android:id="@+id/home_musicPlayBtn"
+        android:layout_width="33dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="9dp"
+        android:background="@mipmap/player_play_hover"
+        />
+    <TextView android:id="@+id/home_musicTitle"
+        android:layout_height="16dp"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/home_iconImage"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/home_musicPlayBtn"
+        android:layout_marginRight="20dp"
+        android:text="世界第一等"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        />
+    <TextView android:id="@+id/home_musicInfo"
+        android:layout_height="15dp"
+        android:layout_width="wrap_content"
+        android:layout_alignLeft="@+id/home_musicTitle"
+        android:layout_alignRight="@+id/home_musicTitle"
+        android:layout_below="@+id/home_musicTitle"
+        android:layout_marginTop="2dp"
+        android:text="刘德华"
+        android:textSize="12sp"
+        android:textColor="#CCCCCC"/>
+    <View android:id="@+id/home_itemSepLine"
+        android:layout_height="0.5dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="#000000"/>
+</RelativeLayout>

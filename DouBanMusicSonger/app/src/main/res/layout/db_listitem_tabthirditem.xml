@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="#FFFFFF">
+
+    <TextView android:id="@+id/itemtitle_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="简介"
+        android:layout_marginLeft="20dp"
+        android:background="#FFFFFF"
+        android:textSize="14sp"
+        android:gravity="center_vertical"/>
+    <ImageView android:id="@+id/child_image"
+        android:layout_width="11dp"
+        android:layout_height="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="12dp"
+        android:src="@mipmap/search_forward2"
+        android:gravity="center_vertical"
+        />
+
+    <TextView android:id="@+id/iteminfo_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/itemtitle_tv"
+        android:layout_marginLeft="10dp"
+        android:text="基本信息"
+        android:background="#FFFFFF"
+        android:textSize="15sp"
+        android:gravity="center_vertical"/>
+
+
+</RelativeLayout>

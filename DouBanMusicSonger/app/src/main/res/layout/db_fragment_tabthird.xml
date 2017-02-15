@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/tab_thirdtoprl"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@mipmap/tab_thitopbg">
+
+        <Button
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@mipmap/icon_shezhi" />
+
+        <TextView
+            android:id="@+id/tab_thirdtitletv"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="27dp"
+            android:text="小甲鱼"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/sep_view"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/tab_thirdtitletv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF" />
+
+        <RelativeLayout
+            android:id="@+id/tab_sec_iconRl"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/sep_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/tabiconraidios_shape">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/icon_th" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tab_sec_iconRl"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/user_fav"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="粉丝"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/user_fav"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/user_fav"
+                android:background="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/user_guanzhu"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_toLeftOf="@+id/user_fav"
+                android:gravity="center"
+                android:text="粉丝"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_alignLeft="@+id/user_guanzhu"
+                android:layout_alignRight="@+id/user_guanzhu"
+                android:layout_below="@+id/user_guanzhu"
+                android:gravity="center"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/user_fav"
+                android:background="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/user_fangke"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@+id/user_fav"
+                android:gravity="center"
+                android:text="访客"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_alignLeft="@+id/user_fangke"
+                android:layout_alignRight="@+id/user_fangke"
+                android:layout_below="@+id/user_fangke"
+                android:gravity="center"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/tab_thirditemlistview"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/tab_thirdtoprl"></ListView>
+
+    <LinearLayout
+        android:background="#FFFFFF"
+        android:id="@+id/usercenterfirst"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/tab_thirditemlistview"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/ic_usercenter_collection" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:text="我的收录"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/ic_usercenter_like" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:text="我的喜欢" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/ic_usercenter_download" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:text="我的下载" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/usercenterfirst"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/ic_usercenter_fragment" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:text="碎片"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/ic_usercenter_music" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:text="Ting" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:textSize="12sp"
+                android:gravity="center"
+                 />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
